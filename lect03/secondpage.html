@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			/* Write CSS here */
+			h1 {
+				color: blue;
+				font-size: 50px;
+				font-family: Arial;
+				text-align: center;
+			}
+			img {
+				/* Change either the width OR height, don't change both or else you will distort the proportions of the image  */
+				width: 300px;
+				/*height: 300px;*/
+				/* auto means maintain the original proportions */
+				height: auto;
+			}
+			body {
+				background-color: #D6AFFF;
+			}
+			#first-image {
+				width: 120px;
+				margin-right: 10px;
+				/*  */
+				float: right;
+			}
+			span {
+				color: red;
+				font-size: 30px;
+			}
+			/* Can use a TAG to create a CSS rule */
+			h2 {
+				color: green;
+			}
+			/* Rules of CSS cascade */
+			/* 1. Whichever CSS rule has the more specific selector will always win */
+			/* 2. If CSS rules have the same level of specificity, the rule that comes LATER wins. */
+
+			/* Can use an ID to create a CSS rule */
+			#about-heading {
+				background-color: yellow;
+				color: red;
+			}
+			/* Can use a class to create a CSS rule */
+			.orange {
+				background-color: orange;
+			}
+			.arial {
+				background-color: pink;
+				font-family: "Arial";
+			}
+
+			#header {
+				background-color: beige;
+				text-align: center;
+			}
+			#about {
+				background-color: lightgreen;
+				/*borders*/
+				/*border-color: black;
+				border-width: 5px;
+				border-style: solid;*/
+
+				/* shorthand way to write border */
+				border: black 5px solid;
+				border-radius:  20px;
+
+				/* 2 ways to add spacing 
+					1. padding creates space INSIDE of a tag
+				*/
+				padding-left: 20px;
+				padding-right: 20px;
+
+				/*shorthand - padding on all sides */
+				padding: 20px;
+
+				/* 2. margin. margin creates space OUTSIDE of a tag */
+				margin-left: 60px;
+
+				/* shorthand - margin on all sides*/
+				margin: 30px;
+			}
+			#facts {
+				background-color: skyblue;
+				border-bottom: blue 2px solid;
+				/* Added padding to the bottom so that the pikachu image can fit in this div */
+				padding-bottom: 80px;
+				padding-top: 30px;
+			}
+			#second-image {
+				float: right;
+				width: 300px;
+			}
+			#resources {
+				background-color: orange;
+				background-image: url("img/pikachu.jpeg");
+				background-size: 100px;
+				/* by default, background image repeats itself */
+				background-repeat-x: no-repeat;
+				background-repeat-y: no-repeat;
+				width:  500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h1>All About Pikachu</h1>
+		</div>
+
+		<div id="about"> <!-- end of #header -->
+			<h2 id="about-heading" class="arial orange">About</h2>
+
+			<img id="first-image" src="https://static.wikia.nocookie.net/wii/images/8/89/Pikachu.jpg/revision/latest?cb=20140209205851" alt="Pikachu waving" >
+
+			<p><span>P</span>ikachu is a species of Pokémon, fictional creatures that appear in an assortment of media <span>of the</span> Pokémon franchise by The Pokémon Company. Pikachu is a yellow mouse-like Pokémon with powerful electrical abilities. Pikachu is the best-known species of Pokémon, largely due to its appearance in the anime series as the starter Pokémon of the protagonist, Ash Ketchum. Pikachu is a major character of the Pokémon franchise as well as its mascot, and has become an icon of Japanese pop culture in recent years, as well as one of the major mascots for Nintendo.</p>
+			<p class="arial">Pikachu’s design was conceived by Atsuko Nishida and finalized by Ken Sugimori. Pikachu first appeared in Pokémon Red and Green in Japan, and later in the first internationally released Pokémon video games, Pokémon Red and Blue, for the Game Boy.</p>
+		</div> <!-- end of #about -->
+
+		<div id="facts">
+
+			<img id="second-image" src="img/pikachu.jpeg" alt="Pikachu in handcuffs" />
+			
+			<h2 class="arial">Facts</h2>
+
+			<ul>
+				<li>lightning powers</li>
+				<li>electric type</li>
+				<li>a mouse</li>
+				<li>evolved from pichu</li>
+				<li>Ash Ketchum's bestie</li>
+			</ul>
+		</div> <!-- end of #facts -->
+
+		<div id="resources">
+			<h2>Resources</h2>
+			<ol>
+				<li>
+					<!-- Some tags come with attributes that enhances a tag -->
+					<a href="https://pokemon.com" target="_blank">Pokemon Website</a>
+				</li>
+				<li><a href="mailto:nayeonki@usc.edu">Email us</a></li>
+			</ol>
+		</div> <!-- end of #resources -->
+
+		<!-- <hr> tag creates a horizontal row -->
+		<hr/>
+		Made by Nayeon Kim at ITP 104.👩‍💻
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
