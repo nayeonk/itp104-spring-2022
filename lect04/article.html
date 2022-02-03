@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Article</title>
+
+	<style>
+		html, body {
+			padding: 0;
+			margin: 0;
+		}
+		h2 {
+			margin-top: 0;
+		}
+		#header {
+			background-color: green;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			color: white;
+		}
+		/* #article is the parent of #main-column and #sidebar-column */
+		#article {
+			background-color: skyblue;
+			/* only the parent can have this property */
+			display: flex;
+			flex-direction: row;
+			/*  justify content specifies alignment along the MAIN AXIS. MAIN AXIS is defined by flex-direction  */
+			justify-content: center;
+			/* align items specifices alignment along the CROSS AXIS. CROSS AXIS is the opposite of MAIN AXIS */
+			/*align-items: flex-end;*/
+		}
+		#main-column {
+			background-color: yellow;
+			width: 500px;
+			padding-left: 20px;
+			padding-top: 10px;
+			/*margin-right: 10px;*/
+		}
+		#sidebar-column {
+			background-color: pink;
+			width: 200px;
+		}
+		#footer {
+			background-color: orange;
+		}
+		#last-paragraph {
+			margin-bottom: 0px;
+		}
+		#main-image {
+			width: 300px;
+		}
+		#row {
+			display: flex;
+			justify-content: center;
+			background-color: pink;
+			width: 400px;
+		}
+		.column {
+			background-color: lightgreen;
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>Los Angeles Times</h1>
+	</div><!-- end of #header -->
+
+	<div id="article">
+		
+		<div id="main-column">
+			<h2>How to find the oddest birds in L.A.</h2>
+			<img id="main-image" src="images/article1.jpeg"/>
+			<p>But for the pandemic, I would be flying to New York City to see a snowy owl standing in a Central Park meadow. It’s the first time the Arctic tundra dweller has been seen in the park in130 years. “Wow! A magnificent snowy owl is in NYC! 🦉,” @Centralparknyc posted on IG.</p>
+			<p id="last-paragraph">The rare sighting took me back to 2013, when I persuaded my husband to ditch his birthday dinner in favor of careening over to Marina del Rey to see blue-footed boobies that had appeared offshore. We got there just before sunset. Avid birders had set up scopes and invited us to take a look. It was beyond thrilling to see these visitors from Ecuador’s Galápagos Islands.</p>
+		</div> <!-- end of #main-column -->
+
+		<div id="sidebar-column">
+			<h2>Related Articles</h2>
+			<ul>
+				<li>Related Article 1</li>
+				<li>Related Article 2</li>
+				<li>Related Article 3</li>
+			</ul>
+		</div> <!-- end of #sidebar --> 
+
+	</div> <!-- end of #article -->
+
+	<div id="row">
+		<div class="column">
+			Hello
+		</div>
+		<div class="column">
+			Hello
+		</div>
+		<div class="column">
+			Hello
+		</div>
+	</div>
+
+	<div id="footer">
+		<p>Copyright 2022. Made by Nayeon Kim at ITP 104</p>
+	</div> <!-- end of #footer -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
