@@ -4,11 +4,19 @@
 		<title></title>
 		<style>
 			/* Write CSS here */
+
+			/* Overwrite the default spacing that comes with browsers */
+			html, body {
+				padding: 0;
+				margin:  0;
+			}
+
 			h1 {
 				color: blue;
 				font-size: 50px;
 				font-family: Arial;
-				text-align: center;
+				margin-top: 0;
+				margin-bottom: 0;
 			}
 			img {
 				/* Change either the width OR height, don't change both or else you will distort the proportions of the image  */
@@ -77,10 +85,14 @@
 				padding: 20px;
 
 				/* 2. margin. margin creates space OUTSIDE of a tag */
-				margin-left: 60px;
+				/*margin-left: 60px;*/
 
 				/* shorthand - margin on all sides*/
 				margin: 30px;
+
+				width: 600px;
+				margin-left: auto;
+				margin-right: auto;
 			}
 			#facts {
 				background-color: skyblue;
