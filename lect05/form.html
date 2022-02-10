@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<style>
+		.form-row {
+			background: skyblue;
+			margin-bottom: 10px;
+			display: flex;
+		}
+		.left-label {
+			background-color: yellow;
+			width: 150px;
+			text-align: right;
+			padding-right: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<form action="confirm.html">
+		<div class="form-row">
+			<label class="left-label" for="name-input">Name:</label>
+			<input type="text" id="name-input" placeholder="Tommy Trojan">
+		</div>
+
+		<div class="form-row">
+			<label class="left-label" for="email-input">Email:</label>
+			<input type="email" id="email-input">
+		</div>
+
+		<div class="form-row">
+			<label class="left-label" for="password-input">Password:</label>
+			<input type="password" id="password-input">
+		</div>
+
+
+		<!-- Radio buttons: multiple choices, but only ONE can be chosen -->
+		<div class="form-row">
+			<label class="left-label">Favorite Color:</label>
+
+			<input type="radio" id="red" name="fav">
+			<label for="red">Red</label>
+
+			<input type="radio" id="blue" name="fav">
+			<label for="blue">Blue</label>
+
+			<input type="radio" id="pink" name="fav">
+			<label for="pink">Pink</label>
+		</div>
+
+		<!-- Checkboxes: multiple choices, many can be chosen -->
+		<div class="form-row">
+			<label class="left-label">Hobbies:</label>
+
+			<input type="checkbox" id="running">
+			<label for="running">Running</label>
+
+			<input type="checkbox" id="hiking">
+			<label for="hiking">Hiking</label>
+
+			<input type="checkbox" id="walking">
+			<label for="walking">Walking</label>
+		</div>
+
+		<!-- Dropdowns -->
+		<div class="form-row">
+			<label class="left-label" for="year">School Year:</label>
+			<select id="year">
+				<option></option>
+				<option>Freshman</option>
+				<option>Sophomre</option>
+				<option>Junior</option>
+				<option>Senior</option>
+			</select>
+		</div>
+
+		<!-- Textarea -->
+		<div class="form-row">
+			<label class="left-label" for="comments">Comments:</label>
+			<textarea id="comments"></textarea>
+		</div>
+
+		<div class="form-row">
+			<!-- Buttons -->
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</div>
+
+
+	</form>
+
+</body>
+</html>
+
+
+
+
+
